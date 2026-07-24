@@ -335,7 +335,7 @@ export default function Home() {
         <footer className="border-t border-line">
           <div className="mx-auto max-w-3xl px-5 py-6 font-mono text-xs leading-relaxed text-ink-soft/70 sm:px-6">
             Sources: Greenhouse &amp; Lever company boards, Remotive,
-            Arbeitnow, RemoteOK, Jobicy — all free, public APIs.
+            Arbeitnow, RemoteOK, Jobicy
           </div>
         </footer>
       </main>
