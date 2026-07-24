@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f5f3ee;
+  --paper-raised: #fbfaf6;
+  --ink: #191712;
+  --ink-soft: #5a5648;
+  --line: #ddd7c6;
+  --line-strong: #b9b19a;
+  --signal: #1f6b45;
+  --signal-dark: #164e33;
+  --navy: #263a66;
+  --amber: #a9701f;
+  --danger: #9a3324;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-signal: var(--signal);
+  --color-signal-dark: var(--signal-dark);
+  --color-navy: var(--navy);
+  --color-amber: var(--amber);
+  --color-danger: var(--danger);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.font-display {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua",
+    Georgia, ui-serif, serif;
+  font-optical-sizing: auto;
+}
+
+.font-mono {
+  font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo,
+    Consolas, monospace;
+}
+
+::selection {
+  background: var(--signal);
+  color: var(--paper-raised);
+}
+
+/* subtle focus ring that stays visible on paper */
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+}
